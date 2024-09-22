@@ -4,7 +4,7 @@
 ### <center><font face="仿宋" font color=red size=3>总述</font></center>
 本次任务没有过多的记录过程，主体通过查阅opencv官方文档以及询问GPT实现，程序的实现感觉也基本上是调用函数的过程，故没有什么特别的思路展示喵。
 
-***程序运行生成的图像文件存放于 仓库/resources/out/***
+***程序运行生成的图像文件存放于 仓库/resources/out/***     
 ***本人纯纯小白，以下仅为编写过程中的小小感想，还请学长们指教***
 ### <center><font face="仿宋" font color=red size=3>运行成果展示</font></center>
 
