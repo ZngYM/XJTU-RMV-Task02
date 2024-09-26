@@ -4,14 +4,13 @@
 
 int main()
 {
-    // 使用OpenCV的imread函数读取图像。这个函数会返回一个Mat对象，这是OpenCV用来存储图像的数据结构。
-    // imread的第一个参数是图像文件的路径，第二个参数定义了读取图像的方式。在这个例子中，我们使用IMREAD_COLOR，意味着我们将以彩色模式读取图像。
+    // 使用OpenCV的imread函数读取图像。
+    // imread的第一个参数是图像文件的路径，第二个参数定义了读取图像的方式。使用IMREAD_COLOR，以彩色模式读取图像。
     cv::Mat image_1 = cv::imread("/home/zym/opencv_project/resources/test_image.png", cv::IMREAD_COLOR);
 
-    // 检查图像数据是否存在。如果imread不能读取图像，那么返回的Mat对象将不包含任何数据。
+    // 检查图像数据是否存在。
     if (!image_1.data)
     {
-        // 如果图像数据不存在，打印错误消息并退出程序。
         std::cout << "No image data \n";
         return -1;
     }
@@ -29,7 +28,7 @@ int main()
     cv::imshow("Display Image", image_1);
     cv::waitKey(0);
 
-    // 与上面类似，我们创建一个新的窗口来显示灰度图像，并在这个窗口中显示灰度图像。
+    // 创建一个新的窗口来显示灰度图像，并在这个窗口中显示灰度图像。
     cv::namedWindow("Gray Image", cv::WINDOW_AUTOSIZE);
     cv::imshow("Gray Image", gray_image);
     cv::imwrite("/home/zym/opencv_project/resources/out/gray_image.png",gray_image);
